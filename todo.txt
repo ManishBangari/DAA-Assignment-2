@@ -1,0 +1,24 @@
+ToDo
+#Assign 2
+
+1. Count the faculties dynamically post CGPA columns. It will be mod n
+2. Sort by CGPA at run time
+3. Outputs
+A) CSV of allocation (see the output_btp_mtp_allocation.csv). In this file the output is randomly done. The purpose of this file is to tell you the expected output. During the tutorial session you were explained how to do the allocation. Basically mod n, with sorted cgpa and then starting pref 1.. n (in one cycle each fac get exactly one student)
+B) Fac pref stats: see the file fac_preference_count.csv for the excepted output
+
+BTW it may happen ki for 18 fac, stud may be 94, so last 4 student will be allocated to 4 fac, and 14 fac may not get
+so 4 fac will get (90/18)+1 ,and other 14 will get exactly 90/18 = 5 stud
+Again prog should be dynamic to work with any number of stud and any number of fac
+
+Req:
+1. Use Streamlit for uploading input file and download both output files
+2. Use docker based setup for having python, additional libraries, and streamlit. Docker compose file will be checked.
+3. While showing output it should work without and with docker
+4. Use logger library to record errors
+5. Use try catch whereever possible
+
+Upload in your assignment 2 folder of git.
+
+Checking date: 31 Oct 2025
+
